@@ -36,6 +36,11 @@ class Queue:
         '''
         return (len( self.__list ) == 0)
         
+    def __len__(self):
+        '''
+        Ritorna la lunghezza della coda
+        '''
+        return len(self.__list) 
         
     def __str__(self):
         '''
