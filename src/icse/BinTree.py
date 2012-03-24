@@ -108,7 +108,7 @@ class BinTree:
         Eccezione che indica hasChild con tipo non valido
         '''
         def __init__(self, value):
-            super.__init__(self, value)
+            BinTree.BinTreeError.__init__(self, value)
 
 
     class ChildMissingError(BinTreeError):
@@ -116,7 +116,7 @@ class BinTree:
         Eccezione che indica la mancanza di un figlio
         '''
         def __init__(self, value):
-            super.__init__(self, value)
+            BinTree.BinTreeError.__init__(self, value)
 
 
 def BinTree_prettyPrint(root):

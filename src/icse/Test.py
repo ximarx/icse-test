@@ -8,6 +8,7 @@ from random import Random
 from icse.BinTree import BinTree, BinTree_prettyPrint
 from icse.SearchTree import SearchTree
 import sys
+from icse.NTree import NTree
 
 if __name__ == '__main__':
     
@@ -51,3 +52,18 @@ if __name__ == '__main__':
     
     print search
     
+    
+    ntree = NTree(1, [NTree(2, [5,6,7]),3,4])
+    
+    print "Cerco di mostrare il valore 6, ottenendo: ", ntree.get_child(0).get_child(1).get_value()
+    
+    try:
+        print "Questo elemento dovrebbe non esistere: " + ntree.get_child(1).get_firstchild().get_value()
+    except NTree.InvalidChildIndexError, e:
+        print "Eccezione intercettata: " + str(e)
+    
+    print ntree
+
+    ntree.get_child(2).append_child(NTree(8, [9, 10, 11]))
+    
+    print ntree    

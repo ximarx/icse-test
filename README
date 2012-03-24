@@ -1,3 +1,8 @@
 Implementazioni di test in python per il corso di
 
 "Ingegneria della Conoscenza e Sistemi Esperti"
+
+Strutture dati:
+	- coda [icse.Queue]
+	- albero binario [icse.BinTree]
+	- albero binario di ricerca (implementazione basata su albero binario) [icse.SearchTree]
