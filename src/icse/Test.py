@@ -6,6 +6,8 @@ Created on 22/mar/2012
 from icse.Queue import Queue
 from random import Random
 from icse.BinTree import BinTree, BinTree_prettyPrint
+from icse.SearchTree import SearchTree
+import sys
 
 if __name__ == '__main__':
     
@@ -38,4 +40,14 @@ if __name__ == '__main__':
     
     print BinTree_prettyPrint(b)
     
+    
+    search = SearchTree([40,20,11,17,5,32])
+    
+    print "Elemento gia presente reinserito? ", search.insert(20)
+    
+    for val in [50,45,32,80]:
+        if search.insert(val) == False :
+            print >> sys.stderr,  "Elemento ignorato perche gia' esistente: " + str(val) 
+    
+    print search
     

@@ -86,6 +86,9 @@ class BinTree:
         dx.set_child_of(self)
         self.__dx = dx
         
+    def set_value(self, value):
+        self.value = value
+        
     def __str__(self):
         return repr(self.value) + " ( " + str(self.__sx) + " ) ( " + str(self.__dx) + " )"
 
