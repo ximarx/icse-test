@@ -6,3 +6,4 @@ Strutture dati:
 	- coda [icse.Queue]
 	- albero binario [icse.BinTree]
 	- albero binario di ricerca (implementazione basata su albero binario) [icse.SearchTree]
+	- albero n-ario [icse.NTree]
